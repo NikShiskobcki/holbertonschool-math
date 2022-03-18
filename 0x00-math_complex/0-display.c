@@ -9,6 +9,8 @@ void display_complex_number(complex c)
 {
 	if (!c.re && !c.im)
 		printf("0\n");
+	if (c.re == 0 && c.im != 0)
+		printf("0");
 
 	if (c.re != 0)
 		printf("%g", c.re);
